@@ -94,3 +94,30 @@ aboutP.textContent = siteContent["main-content"]["about-content"];
 const middleImg = document.getElementById("middle-img");
 
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+//services // Product // Vision
+
+const services = document.querySelector(".bottom-content .text-content h4");
+services.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesP = document.querySelector('.bottom-content .text-content p')
+servicesP.textContent = siteContent['main-content']['services-content']
+
+//product
+const product = document.querySelector(".bottom-content .text-content:nth-child(2) h4");
+product.textContent = siteContent["main-content"]["product-h4"];
+
+const productP = document.querySelector('.bottom-content .text-content:nth-child(2) p')
+
+productP.textContent = siteContent['main-content']['product-content']
+
+
+// Vision
+
+const vision = document.querySelector(".bottom-content .text-content:nth-child(3) h4");
+vision.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionP = document.querySelector('.bottom-content .text-content:nth-child(3) p')
+visionP.textContent = siteContent['main-content']['vision-content']
+
+
