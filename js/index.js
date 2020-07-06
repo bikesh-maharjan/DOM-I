@@ -100,24 +100,66 @@ middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 const services = document.querySelector(".bottom-content .text-content h4");
 services.textContent = siteContent["main-content"]["services-h4"];
 
-const servicesP = document.querySelector('.bottom-content .text-content p')
-servicesP.textContent = siteContent['main-content']['services-content']
+const servicesP = document.querySelector(".bottom-content .text-content p");
+servicesP.textContent = siteContent["main-content"]["services-content"];
 
 //product
-const product = document.querySelector(".bottom-content .text-content:nth-child(2) h4");
+const product = document.querySelector(
+  ".bottom-content .text-content:nth-child(2) h4"
+);
 product.textContent = siteContent["main-content"]["product-h4"];
 
-const productP = document.querySelector('.bottom-content .text-content:nth-child(2) p')
+const productP = document.querySelector(
+  ".bottom-content .text-content:nth-child(2) p"
+);
 
-productP.textContent = siteContent['main-content']['product-content']
-
+productP.textContent = siteContent["main-content"]["product-content"];
 
 // Vision
 
-const vision = document.querySelector(".bottom-content .text-content:nth-child(3) h4");
+const vision = document.querySelector(
+  ".bottom-content .text-content:nth-child(3) h4"
+);
 vision.textContent = siteContent["main-content"]["vision-h4"];
 
-const visionP = document.querySelector('.bottom-content .text-content:nth-child(3) p')
-visionP.textContent = siteContent['main-content']['vision-content']
+const visionP = document.querySelector(
+  ".bottom-content .text-content:nth-child(3) p"
+);
+visionP.textContent = siteContent["main-content"]["vision-content"];
 
+// footer
 
+const contact = document.querySelector(".contact h4");
+console.log(contact);
+contact.textContent = siteContent["contact"]["contact-h4"];
+
+const contactP = document.querySelectorAll(".contact p");
+
+contactP[0].textContent = siteContent.contact.address;
+contactP[1].textContent = siteContent.contact.phone;
+contactP[2].textContent = siteContent.contact.email;
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent.footer.copyright;
+
+// #### Task3 : Add new content
+
+//* [ ] Change the color of the navigation text to be green.
+//* [ ] Utilize `.appendChild()` and `.prepend()` to add two new items to the navigation system. You can call them whatever you want.
+//* [ ] Check your work by looking at the [original html](original.html) in the browser
+
+const nav1 = document.createElement("a");
+nav1.textContent = "News";
+
+const nav2 = document.createElement("a");
+nav2.textContent = "More News";
+
+const newNav = document.querySelector("nav");
+newNav.appendChild(nav1);
+newNav.appendChild(nav2);
+
+for (let i = 0; i < newNav.children.length; i++) {
+  newNav.children[i].style.color = "green";
+}
+
+// completed the tast 3
