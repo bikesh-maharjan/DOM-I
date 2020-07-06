@@ -47,12 +47,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 const navItems = document.querySelectorAll("a");
-navItems[0].textContent = "services";
-navItems[1].textContent = "product";
-navItems[2].textContent = "vision";
-navItems[3].textContent = "features";
-navItems[4].textContent = "about";
-navItems[5].textContent = "contact";
+navItems[0].textContent = "Services";
+navItems[1].textContent = "Product";
+navItems[2].textContent = "Vision";
+navItems[3].textContent = "Features";
+navItems[4].textContent = "About";
+navItems[5].textContent = "Contact";
 
 // console.log(navItems);
 
