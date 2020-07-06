@@ -135,7 +135,7 @@ contact.textContent = siteContent["contact"]["contact-h4"];
 
 const contactP = document.querySelectorAll(".contact p");
 
-contactP[0].textContent = siteContent.contact.address;
+contactP[0].innerHTML = "123 Way 456 Street <br> Somewhere, USA";
 contactP[1].textContent = siteContent.contact.phone;
 contactP[2].textContent = siteContent.contact.email;
 
@@ -152,11 +152,11 @@ const nav1 = document.createElement("a");
 nav1.textContent = "News";
 
 const nav2 = document.createElement("a");
-nav2.textContent = "More News";
+nav2.textContent = "Home";
 
 const newNav = document.querySelector("nav");
 newNav.appendChild(nav1);
-newNav.appendChild(nav2);
+newNav.prepend(nav2);
 
 for (let i = 0; i < newNav.children.length; i++) {
   newNav.children[i].style.color = "green";
